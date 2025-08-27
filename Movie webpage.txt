@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineWorld.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <h3 class="logo">MovieZone</h3>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Tickets</a></li>
+                    <li><a href="">Booking</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </nav>
+            <button class="btn nav">Book your tickets now</button>
+        </header>
+        <main>
+            <h1 class="front">MARVEL</h1>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAWkSQhUhMzTwsBtPMzTQXSzsjY_y21WzOldKrq8q8ugKUILxwNpNXPFa0SSVEgmpl7ngtrZ5ZPtu6JWk9l-F7YlrB4b98tG0iXUFOxEIMHHqzQIoRTnodg2hSglQE0AuS3VnVNYCVV3BULp9_dPTyAIlKtmP0KLAu_dcn4s7Kxo1iSR5RaU_XLGoVrClB/s320/d78ff70aea97517a980f050903f86b71-removebg-preview-removebg-preview.png">
+            <h1 class="back">MARVEL</h1>
+        </main>
+        <div class="footer">
+            <div class="left">
+                <button class="btn leftbt">Origin</button>
+                <p>The Avengers began as a group of extraordinary individuals who were assembled to defeat Loki and his Chitauri army in New York City. Since then, the team has expanded its roster and faced a host of new threats, while dealing with their own turmoil.</p>
+            </div>
+            <div class="right">
+                <button class="btn rightbt">Book now!</button>
+            </div>
+    </section>
+    
+</body>
+</html>
