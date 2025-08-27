@@ -1,39 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineWorld.com</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section>
-        <header>
-            <h3 class="logo">MovieZone</h3>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Tickets</a></li>
-                    <li><a href="">Booking</a></li>
-                    <li><a href="">Help</a></li>
-                </ul>
-            </nav>
-            <button class="btn nav">Book your tickets now</button>
-        </header>
-        <main>
-            <h1 class="front">MARVEL</h1>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAWkSQhUhMzTwsBtPMzTQXSzsjY_y21WzOldKrq8q8ugKUILxwNpNXPFa0SSVEgmpl7ngtrZ5ZPtu6JWk9l-F7YlrB4b98tG0iXUFOxEIMHHqzQIoRTnodg2hSglQE0AuS3VnVNYCVV3BULp9_dPTyAIlKtmP0KLAu_dcn4s7Kxo1iSR5RaU_XLGoVrClB/s320/d78ff70aea97517a980f050903f86b71-removebg-preview-removebg-preview.png">
-            <h1 class="back">MARVEL</h1>
-        </main>
-        <div class="footer">
-            <div class="left">
-                <button class="btn leftbt">Origin</button>
-                <p>The Avengers began as a group of extraordinary individuals who were assembled to defeat Loki and his Chitauri army in New York City. Since then, the team has expanded its roster and faced a host of new threats, while dealing with their own turmoil.</p>
-            </div>
-            <div class="right">
-                <button class="btn rightbt">Book now!</button>
-            </div>
-    </section>
-    
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.btn{
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdmllJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 32px 80px;
+}
+header{
+    height: 65px;
+    width: 1400px;
+    background-color: rgba(255,255,255,.2);
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+h3{
+    font-size: 24px;
+    color: #ffff;
+    font-weight: 800;
+}
+nav ul{
+    display: flex;
+    gap: 25px;
+}
+nav ul li a{
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .5s;
+}
+nav ul li a:hover{
+    color: red;
+}
+header .nav{
+    background-color:#9c0001 ;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 350px;
+
+}
+h1{
+    position: absolute;
+    color: #ffffff;
+    font-size: 320px;
+    font-family: "Anton",sans-serif;
+    -webkit-text-stroke: 1px #ffffff;
+}
+h1.font{
+    z-index: 80;
+}
+h1.back{
+    color: transparent;
+    z-index: 9999;
+}
+img{
+    position: absolute;
+    z-index: 5;
+    width: 565px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 65%;
+}
+.footer .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+.footer .left .leftbt{
+    background-color: rgb(40, 36, 36);
+    border: 2px solid #ffff;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+}
+.left p{
+    color: #ffffff;
+    width: 500px;
+} 
+.footer .right .rightbt{
+    background-color: #9c0001;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
